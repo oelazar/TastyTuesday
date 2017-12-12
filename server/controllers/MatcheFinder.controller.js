@@ -13,7 +13,7 @@ class MatcheFinder {
 
     static *test_sendemail()
     {
-        emailSender.mondayMail("oren.elazar@ironsrc.com");
+        emailSender.mondayMail("oren.elazar@ironsrc.com" );
     }
 
     static  *test_addUsers()
