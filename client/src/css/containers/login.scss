@@ -1,0 +1,50 @@
+.login {
+  width: 483px;
+  height: 427px;
+  margin: 60px auto;
+  border: solid 2px #b766ff;
+  padding: 30px;
+  color: #fff;
+  font-family: Helvetica;
+  text-align: center;
+  h2 {
+    letter-spacing: 0.2px;
+    margin-bottom: 15px;
+    font-family: Grotesk;
+  }
+  .loginForm {
+    text-align: left;
+    input[type="text"],
+    input[type="password"] {
+      height: 43px;
+      background-color: #07004a;
+      border: solid 2px #4d65ff;
+      border-radius: 0;
+      color:#fff;
+    }
+    label {
+      color: #4d65ff;
+      margin-top: 15px;
+    }
+  }
+  button {
+    height: 43px;
+    width: 100%;
+    border-radius: 3px;
+    background: #9013fe;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 4px #e479fa;
+    margin: 30px auto;
+    box-shadow: none;
+    border: none;
+
+    &:hover,
+    &:focus {
+      background: #9013fe;
+    }
+  }
+}

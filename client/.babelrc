@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "latest",
+    "react",
+    "stage-3"
+  ],
+  "plugins": [
+    "lodash",
+    "transform-runtime"
+  ]
+}
