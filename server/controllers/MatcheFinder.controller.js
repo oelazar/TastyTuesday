@@ -7,7 +7,14 @@ const dinerController = require("./Diner.controller");
 const roomModleHelper = require("../utils/roomModleHelper");
 const matcheFinderModelHelper = require("../utils/matcheFinderModelHelper");
 
+const emailSender = require('../utils/emailSender');
+
 class MatcheFinder {
+
+    static *test_sendemail()
+    {
+        emailSender.mondayMail("oren.elazar@ironsrc.com");
+    }
 
     static  *test_addUsers()
     {

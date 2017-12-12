@@ -1,13 +1,15 @@
+require('dotenv').config();
+
 class Emailhelper {
 
     sendMail(emailToSend, htmlContent) {
         const helper = require('sendgrid').mail;
-        const fromEmail = new helper.Email('Tasty.Tuesdays@ironsrc.com');
+        const fromEmail = new helper.Email('Tasty.Tuesday@ironsrc.com');
         const toEmail = new helper.Email(emailToSend);
-        const subject = 'Tast-Tuesday';
+        const subject = 'TastTuesday';
         const content = new helper.Content('text/html', htmlContent);
         const mail = new helper.Mail(fromEmail, subject, toEmail, content);
-        const sg = require('sendgrid')('key');
+        const sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
         const request = sg.emptyRequest({
                                             method: 'POST',
                                             path: '/v3/mail/send',

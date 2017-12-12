@@ -31,6 +31,9 @@ module.exports = function () {
     /* TESTS */
     router.get("/api/addUsers", matcheFinderController.test_addUsers);
     router.get("/api/addRooms", matcheFinderController.test_addRooms);
+    router.get("/api/sendemail", matcheFinderController.test_sendemail);
+
+
 
     return router;
 };

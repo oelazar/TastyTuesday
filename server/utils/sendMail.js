@@ -10,7 +10,7 @@ module.exports = {
         var subject = 'TastyTuesday';
         var content = new helper.Content(html);
         var mail = new helper.Mail(fromEmail, subject, toEmail, content);
-        var sg = require('sendgrid')('');
+        var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
         var request = sg.emptyRequest({
             method: 'POST',
             path: '/v3/mail/send',
