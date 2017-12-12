@@ -7,7 +7,7 @@ class Emailhelper {
         const subject = 'Tast-Tuesday';
         const content = new helper.Content('text/html', htmlContent);
         const mail = new helper.Mail(fromEmail, subject, toEmail, content);
-        const sg = require('sendgrid')('');
+        const sg = require('sendgrid')('key');
         const request = sg.emptyRequest({
                                             method: 'POST',
                                             path: '/v3/mail/send',
